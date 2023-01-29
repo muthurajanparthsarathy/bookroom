@@ -1,0 +1,14 @@
+
+CREATE TABLE AllRegisteredroom(
+   sno INT(20) NOT NULL AUTO_INCREMENT,
+  department varchar(30) NOT NULL,
+  roomNo INT(20) NOT NULL,
+  floorNo  INT(20) NOT NULL,
+  bookingFrom date  NOT NULL,
+  bookingTo date  NOT NULL,
+  TimingStart TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+TimingEnd TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+status varchar(20) NOT NULL,
+ PRIMARY KEY (sno)
+);
+
